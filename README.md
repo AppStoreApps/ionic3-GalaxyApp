@@ -18,9 +18,27 @@ $ ionic start myBlank blank
 Then, to run it, cd into `myBlank` and run:
 
 ```bash
+$ ionic upload //to ionic view upload
 $ ionic cordova platform add ios
 $ ionic cordova run ios
+
+$ ionic cordova platform add android
+$ ionic cordova run android
 ```
 
 Substitute ios for android if not on a Mac.
+
+### Commands AppDeploy
+
+$ ionic cordova platform add android
+$ ionic cordova buid android // for view in android studio
+
+### Debugging
+$ ionic cordova run android
+$ ionic cordoba run android --device // run console message in android studio
+
+
+
+
+
 
