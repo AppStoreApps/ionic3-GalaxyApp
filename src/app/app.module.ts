@@ -4,13 +4,27 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
+// components
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
+import { TabsPage } from './../pages/tabs/tabs';
+import { LlamadasPage } from './../pages/tab-llamadas/llamadas';
+import { MensajesPage } from './../pages/tab-mensajes/mensajes';
+import { AudioPage } from './../pages/tab-audio/audio';
+import { Pagina2Page } from './../pages/pagina2/pagina2';
+
+
+
+
+
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    TabsPage,
+    LlamadasPage,
+    MensajesPage,
+    AudioPage,
+    Pagina2Page
   ],
   imports: [
     BrowserModule,
@@ -19,7 +33,11 @@ import { HomePage } from '../pages/home/home';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    TabsPage,
+    LlamadasPage,
+    MensajesPage,
+    AudioPage,
+    Pagina2Page
   ],
   providers: [
     StatusBar,
