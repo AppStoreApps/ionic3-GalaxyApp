@@ -6,8 +6,15 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content >
+<ion-content>
+<ion-list>
+  <button ion-item *ngFor="let personaje of personajes" (click)="navigateTo( personaje )">
+     <ion-avatar item-start>
+      <img [src]="personaje.img">
+    </ion-avatar>
+    {{ personaje.nombre }}
+  </button>  
+</ion-list>
 
-<p>llamas page</p>
 
 </ion-content>

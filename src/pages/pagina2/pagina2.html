@@ -1,13 +1,22 @@
 <ion-header>
   <ion-navbar  color="dark">
     <ion-title text-center>
-      Pagina 2
+      {{personaje.nombre}}
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content >
 
-<p>Pagina 2</p>
+ <ion-grid>
+  <ion-row>
+    <ion-col col-12 text-center>
+
+    <img [src]="personaje.img" class="imagen">
+    <h3 text-center>{{personaje.titulo}}</h3>
+      
+    </ion-col>
+  </ion-row>
+</ion-grid>
 
 </ion-content>

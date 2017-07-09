@@ -1,5 +1,5 @@
 import { Component } from '\@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavParams } from 'ionic-angular';
 
 @Component({
     selector: 'pagina2-page',
@@ -7,5 +7,12 @@ import { NavController } from 'ionic-angular';
 })
 
 export class Pagina2Page {
-    constructor(){}
+
+    personaje: any;
+    constructor(private navParams: NavParams ){
+        // this.personaje = navParams.data.personaje;
+        this.personaje = navParams.get('personaje')
+        console.log('Parametros recibidos en pagina de personaje', navParams );
+        console.log('Parametros del personaje', this.personaje );
+    }
 }
